@@ -1,6 +1,8 @@
+import { isEqual } from "lodash";
 import React from "react";
 import styled from "styled-components";
 import { easyGrid, easyUpdated, easyAnswer, mediumAnswer, mediumGrid, mediumUpdated } from "./SolutionState";
+import toggleSolution from "./SolutionButton";
 
 const MainGrid = styled.div`
 	border: solid black 6px;
@@ -9,10 +11,14 @@ const MainGrid = styled.div`
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 	display: grid;
+	margin-top: 5%;
 `;
 const Cell = styled.input`
 	border: 1.5px solid black;
 	width: 100%;
+	font-size: 200%;
+	font-weight: bolder;
+	background-color: #d8d8d8;
 `;
 const ContainerOne = styled.div`
 	display: grid;
@@ -62,12 +68,6 @@ const ContainerNine = styled.div`
 
 const difficulty = easyGrid;
 
-function displayValue(value) {
-	if (difficulty[value] !== 0) {
-		return difficulty[value];
-	}
-}
-
 function isNonZero(value) {
 	if (!!difficulty[value] === true) {
 		return true;
@@ -80,7 +80,20 @@ const updatedValue = (e) => {
 	easyUpdated[id] = +value;
 };
 
-export default function Title() {
+export default function Grid({ toggleSolution }) {
+	function displayValue(value) {
+		console.log(toggleSolution);
+		if (toggleSolution && difficulty[value] !== 0) {
+			return difficulty[value];
+		}
+		if (toggleSolution) {
+			return easyAnswer[value];
+		}
+		if (difficulty[value] !== 0) {
+			return difficulty[value];
+		}
+		// 	return easyUpdated[value];
+	}
 	return (
 		<>
 			<MainGrid>

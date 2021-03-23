@@ -5,6 +5,7 @@ export default function Buttons() {
 	const NewButton = styled.button`
 		color: white;
 		background-color: blue;
+		margin: 1%;
 	`;
 
 	return <NewButton>New</NewButton>;
