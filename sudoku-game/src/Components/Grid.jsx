@@ -1,8 +1,6 @@
-import { isEqual } from "lodash";
 import React from "react";
 import styled from "styled-components";
 import { easyGrid, easyUpdated, easyAnswer, mediumAnswer, mediumGrid, mediumUpdated } from "./SolutionState";
-import toggleSolution from "./SolutionButton";
 
 const MainGrid = styled.div`
 	border: solid black 6px;
@@ -73,26 +71,30 @@ function isNonZero(value) {
 		return true;
 	}
 }
+let incorrectGuessCount = 0;
 
 const updatedValue = (e) => {
 	const id = e.target.id;
 	const value = e.target.value;
+  if(+value !== easyAnswer[id]) {
+    e.target.className = 'incorrect'
+    incorrectGuessCount++
+    console.log(incorrectGuessCount)
+  }
+  else if(+value === easyAnswer[id]) {
+    e.target.className = 'correct'
+  }
 	easyUpdated[id] = +value;
 };
 
-export default function Grid({ toggleSolution }) {
+export default function Grid({ toggleSolutionState }) {
 	function displayValue(value) {
-		console.log(toggleSolution);
-		if (toggleSolution && difficulty[value] !== 0) {
-			return difficulty[value];
-		}
-		if (toggleSolution) {
-			return easyAnswer[value];
-		}
 		if (difficulty[value] !== 0) {
 			return difficulty[value];
 		}
-		// 	return easyUpdated[value];
+		if (toggleSolutionState) {
+			return easyAnswer[value];
+		}
 	}
 	return (
 		<>

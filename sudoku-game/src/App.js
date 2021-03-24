@@ -18,7 +18,7 @@ function App() {
 			<NewButton />
 			<SolutionButton toggleSolution={toggleSolution} />
 			<SubmitButton />
-			<Grid toggleSolution={toggleSolutionState} />
+			<Grid toggleSolutionState={toggleSolutionState} />
 		</div>
 	);
 }

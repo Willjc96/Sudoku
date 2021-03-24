@@ -10,3 +10,19 @@
   justify-content: center;
   align-items: center;
 } */
+.incorrect {
+  border: 1.5px solid black;
+	width: 100%;
+	font-size: 200%;
+	font-weight: bolder;
+	background-color: #d8d8d8;
+  color: red;
+}
+.correct {
+  border: 1.5px solid black;
+	width: 100%;
+	font-size: 200%;
+	font-weight: bolder;
+	background-color: #d8d8d8;
+  color: black;
+}
