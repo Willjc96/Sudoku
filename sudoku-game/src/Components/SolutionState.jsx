@@ -175,7 +175,7 @@ const easyAnswer = {
 	oneSix: 7,
 	oneSeven: 4,
 	oneEight: 6,
-	oneNine: 9,
+	oneNine: 3,
 	twoOne: 5,
 	twoTwo: 6,
 	twoThree: 3,
