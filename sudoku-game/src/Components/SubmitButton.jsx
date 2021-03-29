@@ -16,7 +16,7 @@ export default function Buttons() {
 		if (_.isEqual(easyUpdated, easyAnswer)) {
 			return alert(`Congratulations you did it with only ${Math.ceil(incorrectGuessCount)} incorrect guesses`);
 		}
-		return alert(`That's not quite right, so far you've had ${Math.ceil(incorrectGuessCount)} incorrect guesses.    Keep trying!!!`);
+		return alert(`That's not quite right, so far you've had ${Math.ceil(incorrectGuessCount)} incorrect guesses. Keep trying!!!`);
 	};
 	return <SubmitButton onClick={answerCheck}>Submit</SubmitButton>;
 }
