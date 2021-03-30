@@ -15,11 +15,13 @@ function App() {
 		setToggleSolutionState(!toggleSolutionState);
 	};
 	const newGameEasy = () => {
+    setToggleSolutionState(false)
 		setNewGameEasyState(true);
 		setNewGameMediumState(false);
 		setNewGameHardState(false);
 	};
 	const newGameMedium = () => {
+    setToggleSolutionState(false)
 		setNewGameEasyState(false);
 		setNewGameMediumState(true);
 		setNewGameHardState(false);
@@ -46,7 +48,7 @@ function App() {
 			<NewButton newGameEasy={newGameEasy} newGameMedium={newGameMedium} newGameHard={newGameHard} />
 			<SolutionButton toggleSolution={toggleSolution} />
 			<SubmitButton />
-			<Grid toggleSolutionState={toggleSolutionState} newDifficulty={newDifficulty()} />
+			<Grid toggleSolutionState={toggleSolutionState} setToggleSolutionState={setToggleSolutionState} newDifficulty={newDifficulty()} />
 		</div>
 	);
 }

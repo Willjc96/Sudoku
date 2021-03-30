@@ -26,27 +26,39 @@ const Container = styled.div`
 
 var incorrectGuessCount = 0;
 
+function resetFields(){
+  const inputArray = document.querySelectorAll('input');
+  inputArray.forEach((input) => {
+      input.value = "";
+      input.className = 'correct';
+  });
+}
+
+
 export default function Grid({ toggleSolutionState, newDifficulty }) {
-	console.log(newDifficulty);
+
 	let difficulty = null;
 	let answer = null;
 	let updated = null;
 	if (newDifficulty === "easy") {
+    resetFields()
+    incorrectGuessCount = 0;
 		difficulty = easyGrid;
 		updated = easyUpdated;
 		answer = easyAnswer;
 	} else if (newDifficulty === "medium") {
-		console.log(updated, answer);
+    resetFields()
+    incorrectGuessCount = 0;
 		difficulty = mediumGrid;
 		updated = mediumUpdated;
 		answer = mediumAnswer;
-		console.log(updated, answer);
 	}
 	//  else if (newDifficulty === "hard") {
 	// 	difficulty = hardGrid;
 	//  updated = hardUpdated
 	//   answer = hardAnswer
 	// }
+
 	function displayValue(value) {
 		if (difficulty[value] !== 0) {
 			return difficulty[value];
