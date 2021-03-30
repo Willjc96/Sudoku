@@ -15,13 +15,13 @@ function App() {
 		setToggleSolutionState(!toggleSolutionState);
 	};
 	const newGameEasy = () => {
-    setToggleSolutionState(false)
+		setToggleSolutionState(false);
 		setNewGameEasyState(true);
 		setNewGameMediumState(false);
 		setNewGameHardState(false);
 	};
 	const newGameMedium = () => {
-    setToggleSolutionState(false)
+		setToggleSolutionState(false);
 		setNewGameEasyState(false);
 		setNewGameMediumState(true);
 		setNewGameHardState(false);
@@ -34,11 +34,11 @@ function App() {
 
 	const newDifficulty = () => {
 		if (newGameEasyState) {
-			return "easy";
+			return "Easy";
 		} else if (newGameMediumState) {
-			return "medium";
+			return "Medium";
 		} else if (newGameHardState) {
-			return "hard";
+			return "Hard";
 		}
 	};
 

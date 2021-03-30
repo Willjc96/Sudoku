@@ -8,8 +8,7 @@ const MainGrid = styled.div`
 	height: 540px;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-	display: grid;
-	margin: 5% auto 0;
+	margin: 1% auto 0;
 `;
 const Cell = styled.input`
 	border: 1.5px solid black;
@@ -26,34 +25,32 @@ const Container = styled.div`
 
 var incorrectGuessCount = 0;
 
-function resetFields(){
-  const inputArray = document.querySelectorAll('input');
-  inputArray.forEach((input) => {
-      input.value = "";
-      input.className = 'correct';
-  });
+function resetFields() {
+	const inputArray = document.querySelectorAll("input");
+	inputArray.forEach((input) => {
+		input.value = "";
+		input.className = "correct";
+	});
 }
 
-
 export default function Grid({ toggleSolutionState, newDifficulty }) {
-
 	let difficulty = null;
 	let answer = null;
 	let updated = null;
-	if (newDifficulty === "easy") {
-    resetFields()
-    incorrectGuessCount = 0;
+	if (newDifficulty === "Easy") {
+		resetFields();
+		incorrectGuessCount = 0;
 		difficulty = easyGrid;
 		updated = easyUpdated;
 		answer = easyAnswer;
-	} else if (newDifficulty === "medium") {
-    resetFields()
-    incorrectGuessCount = 0;
+	} else if (newDifficulty === "Medium") {
+		resetFields();
+		incorrectGuessCount = 0;
 		difficulty = mediumGrid;
 		updated = mediumUpdated;
 		answer = mediumAnswer;
 	}
-	//  else if (newDifficulty === "hard") {
+	//  else if (newDifficulty === "Hard") {
 	// 	difficulty = hardGrid;
 	//  updated = hardUpdated
 	//   answer = hardAnswer
@@ -87,6 +84,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 	};
 	return (
 		<>
+			<h2>Level: {newDifficulty}</h2>
 			<MainGrid>
 				<Container>
 					<Cell

@@ -5,8 +5,7 @@ export default function Title() {
 	const Title = styled.h1`
 		color: white;
 		background: #ad1c1c;
-		margin-left: 500px;
-		margin-right: 500px;
+		margin: 1% auto 0;
 		margin-top: 20px;
 	`;
 

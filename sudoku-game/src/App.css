@@ -4,6 +4,19 @@
 	box-sizing: border-box;
 	text-align: center;
 }
+/* .App {
+	background-image: url("./Images/Number.jpg");
+	background-size: 100vw 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+} */
+
+h2 {
+	color: red;
+}
 
 /* #outer {
   display: flex;
@@ -11,15 +24,15 @@
   align-items: center;
 } */
 .incorrect {
-  border: 1.5px solid black;
+	border: 1.5px solid black;
 	width: 100%;
 	font-size: 200%;
 	font-weight: bolder;
 	background-color: #d8d8d8;
-  color: red;
+	color: red;
 }
 .correct {
-  border: 1.5px solid black;
+	border: 1.5px solid black;
 	width: 100%;
 	font-size: 200%;
 	font-weight: bolder;
