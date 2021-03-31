@@ -43,7 +43,9 @@ function App() {
 		}
 	};
 
-	const Difficulty = styled.h2``;
+	const Difficulty = styled.h2`
+  padding-bottom: 3%;
+  `;
 
 	return (
 		<div className="App">

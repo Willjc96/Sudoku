@@ -3,8 +3,9 @@ import styled from "styled-components";
 
 export default function Title() {
 	const Title = styled.h1`
-		color: white;
-		background: #ad1c1c;
+  font-size: 400%;
+  letter-spacing: 0.10em;
+		color: #2b332b;
 		padding: 5px;
 	`;
 
