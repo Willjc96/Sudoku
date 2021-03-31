@@ -4,18 +4,15 @@
 	box-sizing: border-box;
 	text-align: center;
 }
-/* .App {
-	background-image: url("./Images/Number.jpg");
-	background-size: 100vw 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-} */
+.App {
+	background: linear-gradient(to right top, #65dfc5, #5d9ce4);
+	/* background: cover; */
+	height: 100vh;
+}
 
 h2 {
-	color: red;
+	color: black;
+	margin-top: 5px;
 }
 
 /* #outer {

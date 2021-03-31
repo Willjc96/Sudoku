@@ -4,6 +4,7 @@ import NewButton from "./Components/NewButton";
 import SolutionButton from "./Components/SolutionButton";
 import SubmitButton from "./Components/SubmitButton";
 import Grid from "./Components/Grid";
+import styled from "styled-components";
 import { useState } from "react";
 
 function App() {
@@ -42,9 +43,12 @@ function App() {
 		}
 	};
 
+	const Difficulty = styled.h2``;
+
 	return (
 		<div className="App">
 			<Title />
+			<Difficulty>Level: {newDifficulty()}</Difficulty>
 			<NewButton newGameEasy={newGameEasy} newGameMedium={newGameMedium} newGameHard={newGameHard} />
 			<SolutionButton toggleSolution={toggleSolution} />
 			<SubmitButton />

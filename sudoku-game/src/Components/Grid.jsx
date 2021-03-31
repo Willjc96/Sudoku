@@ -4,20 +4,30 @@ import { easyGrid, easyUpdated, easyAnswer, mediumAnswer, mediumGrid, mediumUpda
 
 const MainGrid = styled.div`
 	border: solid black 6px;
-	width: 540px;
-	height: 540px;
+	width: 37%;
+	height: 0;
+	padding-bottom: 37.5%;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 	margin: 1% auto 0;
+	margin-top: 3.5%;
 `;
 const Cell = styled.input`
 	border: 1.5px solid black;
+	position: relative;
 	width: 100%;
-	font-size: 200%;
+	height: 0;
+	padding-top: 50%;
+	padding-bottom: 50%;
+	font-size: 3vw;
 	font-weight: bolder;
 	background-color: #d8d8d8;
 `;
 const Container = styled.div`
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
 	display: grid;
 	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 	border: 3px solid black;
@@ -84,7 +94,6 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 	};
 	return (
 		<>
-			<h2>Level: {newDifficulty}</h2>
 			<MainGrid>
 				<Container>
 					<Cell
