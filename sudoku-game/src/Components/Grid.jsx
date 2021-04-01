@@ -25,6 +25,19 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		display: grid;
 		grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 		margin: 1% auto 0;
+		@media (max-width: 1024px) {
+			width: 80%;
+			padding-bottom: 80%;
+			left: 10%;
+		}
+		@media (max-width: 430px) {
+			width: 90%;
+			padding-bottom: 90%;
+			left: 5%;
+			border: solid black 4px;
+			border-bottom: solid black 16px;
+			top: 250px;
+		}
 	`;
 	const Cell = styled.input`
 		border: 1.5px solid black;
@@ -36,6 +49,9 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		font-size: 1.8vw;
 		font-weight: bolder;
 		background-color: #d8d8d8;
+		@media (max-width: 1024px) {
+			font-size: 4.5vw;
+		}
 	`;
 	const Container = styled.div`
 		position: relative;
@@ -769,6 +785,3 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 	);
 }
 export { incorrectGuessCount };
-// changed prettier print width setting
-// Title dissapears because of margin
-// Could give containers an id and only have one type of container

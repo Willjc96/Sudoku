@@ -9,29 +9,38 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 		setMenuState(!menuState);
 	};
 
-	// const NewButton = styled.Button`
-	// 	color: white;
-	// 	background-color: blue;
-	// 	min-width: 55px;
-	// 	margin: 1%;
-	// 	margin-bottom: 0.5%;
-	// `;
-	// const DropdownButton = styled.button`
-	// 	margin: 0.5px;
-	// 	padding: 0;
-	// 	height: 18px;
-	// `;
-
 	const MenuDropdownContainer = styled.div`
 		display: flex;
 		flex-direction: column;
 		position: absolute;
 		margin-top: 100%;
 		padding-bottom: 1px;
+		@media (max-width: 430px) {
+			margin-top: 120%;
+		}
 	`;
 
+	const resizeBtn = () => {
+		if (window.innerWidth < 430) {
+			return 20;
+		}
+		return 30;
+	};
+
+	const resizeText = () => {
+		return window.innerWidth < 430 ? 15 : 20;
+	};
+
 	return (
-		<Button marginTop={10} height={30} fontSize={20} appearance="primary" intent="none" iconAfter={CaretDownIcon} onClick={changeMenuState}>
+		<Button
+			marginTop={10}
+			height={resizeBtn()}
+			fontSize={resizeText()}
+			appearance="primary"
+			intent="none"
+			iconAfter={CaretDownIcon}
+			onClick={changeMenuState}
+		>
 			New
 			{menuState ? (
 				<MenuDropdownContainer className="menu">

@@ -6,7 +6,6 @@
 }
 .App {
 	background: linear-gradient(to right top, #f8f8f8, #575757);
-	/* background: cover; */
 	height: 100vh;
 }
 
@@ -15,11 +14,6 @@ h2 {
 	margin-top: 5px;
 }
 
-/* #outer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .incorrect {
 	border: 1.5px solid black;
 	width: 100%;
@@ -34,4 +28,13 @@ h2 {
 	font-size: 1.8vw;
 	font-weight: bolder;
 	background-color: #d8d8d8;
+}
+
+@media (max-width: 1024px) {
+	.incorrect {
+		font-size: 4.5vw;
+	}
+	.correct {
+		font-size: 4.5vw;
+	}
 }
