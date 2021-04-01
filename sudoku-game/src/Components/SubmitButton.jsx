@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { easyUpdated, easyAnswer } from "./SolutionState";
 import { incorrectGuessCount } from "./Grid";
-import {Button} from "evergreen-ui"
+import { Button } from "evergreen-ui";
 const _ = require("lodash");
 
 export default function Buttons() {
@@ -19,5 +19,9 @@ export default function Buttons() {
 		}
 		return alert(`That's not quite right, so far you've had ${Math.ceil(incorrectGuessCount)} incorrect guesses. Keep trying!!!`);
 	};
-	return <Button marginLeft={20} height={30} fontSize={20} appearance="primary" intent="success" onClick={answerCheck}>Submit</Button>
+	return (
+		<Button marginLeft={20} marginTop={10} height={30} fontSize={20} appearance="primary" intent="success" onClick={answerCheck}>
+			Submit
+		</Button>
+	);
 }

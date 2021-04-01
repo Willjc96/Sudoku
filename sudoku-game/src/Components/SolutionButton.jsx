@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Button} from "evergreen-ui"
+import { Button } from "evergreen-ui";
 
 export default function Buttons({ toggleSolution }) {
 	// const SolutionButton = styled.Button`
@@ -9,5 +9,9 @@ export default function Buttons({ toggleSolution }) {
 	// 	margin: 1%;
 	// `;
 
-	return <Button marginLeft={20} height={30} fontSize={20} appearance="primary" intent="danger" onClick={toggleSolution}> Show Solution </Button>
+	return (
+		<Button marginLeft={20} marginTop={10} height={30} fontSize={20} appearance="primary" intent="danger" onClick={toggleSolution}>
+			Show Solution
+		</Button>
+	);
 }
