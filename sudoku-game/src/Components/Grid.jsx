@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { easyGrid, easyUpdated, easyAnswer, mediumAnswer, mediumGrid, mediumUpdated } from "./SolutionState";
+import { easyGrid, easyUpdated, easyAnswer, mediumAnswer, mediumGrid, mediumUpdated, hardAnswer, hardGrid, hardUpdated } from "./SolutionState";
 
 var incorrectGuessCount = 0;
 
@@ -79,11 +79,13 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		updated = mediumUpdated;
 		answer = mediumAnswer;
 	}
-	//  else if (newDifficulty === "Hard") {
-	// 	difficulty = hardGrid;
-	//  updated = hardUpdated
-	//   answer = hardAnswer
-	// }
+	 else if (newDifficulty === "Hard") {
+    resetFields();
+		incorrectGuessCount = 0;
+		difficulty = hardGrid;
+	 updated = hardUpdated
+	  answer = hardAnswer
+	}
 
 	function displayValue(value) {
 		if (difficulty[value] !== 0) {
