@@ -13,7 +13,7 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		margin-top: 100%;
+		margin-top: 55%;
 		padding-bottom: 1px;
 		@media (max-width: 430px) {
 			margin-top: 120%;
