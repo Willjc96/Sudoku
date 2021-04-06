@@ -16,7 +16,7 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 		margin-top: 55%;
 		padding-bottom: 1px;
 		@media (max-width: 430px) {
-			margin-top: 120%;
+			margin-top: 80%;
 		}
 	`;
 

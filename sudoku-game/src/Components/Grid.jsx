@@ -120,6 +120,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 					<Cell
 						id="oneOne"
 						onChange={updatedValue}
+            min="1"
 						maxLength="1"
 						value={displayValue("oneOne")}
 						disabled={isNonZero("oneOne")}
