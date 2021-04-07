@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button, CaretDownIcon } from "evergreen-ui";
+import { Button, SelectMenu, Popover, Position, Menu, CaretDownIcon } from "evergreen-ui";
 
 export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 	const [menuState, setMenuState] = useState(false);
@@ -12,8 +12,8 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 	const MenuDropdownContainer = styled.div`
 		display: flex;
 		flex-direction: column;
-		position: absolute;
-		margin-top: 55%;
+		position: relative;
+		margin-top: 70%;
 		padding-bottom: 1px;
 		@media (max-width: 430px) {
 			margin-top: 80%;
@@ -32,29 +32,54 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 	};
 
 	return (
-		<Button
-			marginTop={10}
-			height={resizeBtn()}
-			fontSize={resizeText()}
-			appearance="primary"
-			intent="none"
-			iconAfter={CaretDownIcon}
-			onClick={changeMenuState}
-		>
-			New
-			{menuState ? (
-				<MenuDropdownContainer className="menu">
-					<Button height={20} fontSize={15} appearance="minimal" onClick={newGameEasy} alignItems="left">
-						Easy
-					</Button>
-					<Button height={20} fontSize={15} appearance="minimal" onClick={newGameMedium}>
-						Medium
-					</Button>
-					<Button height={20} fontSize={15} appearance="minimal" onClick={newGameHard}>
-						Hard
-					</Button>
-				</MenuDropdownContainer>
-			) : null}
-		</Button>
+		<>
+			<Popover
+				position={Position.BOTTOM}
+				content={
+					<Menu width={20}>
+						<Menu.Group width={20}>
+							<Menu.Item width={20} onClick={newGameEasy}>
+								Easy
+							</Menu.Item>
+							<Menu.Item width={20} onClick={newGameMedium}>
+								Medium
+							</Menu.Item>
+							<Menu.Item width={20} onClick={newGameHard}>
+								Hard
+							</Menu.Item>
+						</Menu.Group>
+					</Menu>
+				}
+			>
+				<Button marginTop={10} height={resizeBtn()} fontSize={resizeText()} appearance="primary" intent="none">
+					New
+				</Button>
+			</Popover>
+			{/* // <Button */}
+			{/* // 	marginTop={10}
+		// 	height={resizeBtn()}
+		// 	width={65}
+		// 	fontSize={resizeText()}
+		// 	appearance="primary"
+		// 	intent="none"
+		// 	iconAfter={CaretDownIcon}
+		// 	onClick={changeMenuState}
+		// >
+		// 	New
+		// 	{menuState ? ( */}
+			{/* // 		<MenuDropdownContainer className="menu">
+		// 			<Button height={20} fontSize={15} appearance="minimal" onClick={newGameEasy} alignItems="left">
+		// 				Easy
+		// 			</Button>
+		// 			<Button height={20} fontSize={15} appearance="minimal" onClick={newGameMedium}>
+		// 				Medium
+		// 			</Button>
+		// 			<Button height={20} fontSize={15} appearance="minimal" onClick={newGameHard}>
+		// 				Hard
+		// 			</Button>
+		// 		</MenuDropdownContainer>
+		// 	) : null}
+		// </Button> */}
+		</>
 	);
 }
