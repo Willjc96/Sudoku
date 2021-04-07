@@ -144,6 +144,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneThree"
@@ -153,6 +154,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneFour"
@@ -162,6 +164,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneFive"
@@ -171,6 +174,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneSix"
@@ -180,6 +184,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneSeven"
@@ -189,6 +194,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneEight"
@@ -198,6 +204,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="oneNine"
@@ -207,6 +214,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("oneNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -218,6 +226,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoTwo"
@@ -227,6 +236,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoThree"
@@ -236,6 +246,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoFour"
@@ -245,6 +256,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoFive"
@@ -254,6 +266,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoSix"
@@ -263,6 +276,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoSeven"
@@ -272,6 +286,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoEight"
@@ -281,6 +296,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="twoNine"
@@ -290,6 +306,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("twoNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -301,6 +318,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeTwo"
@@ -310,6 +328,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeThree"
@@ -319,6 +338,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeFour"
@@ -328,6 +348,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeFive"
@@ -337,6 +358,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeSix"
@@ -346,6 +368,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeSeven"
@@ -355,6 +378,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeEight"
@@ -364,6 +388,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="threeNine"
@@ -373,6 +398,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("threeNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -384,6 +410,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourTwo"
@@ -393,6 +420,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourThree"
@@ -402,6 +430,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourFour"
@@ -411,6 +440,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourFive"
@@ -420,6 +450,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourSix"
@@ -429,6 +460,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourSeven"
@@ -438,6 +470,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourEight"
@@ -447,6 +480,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fourNine"
@@ -456,6 +490,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fourNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -467,6 +502,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveTwo"
@@ -476,6 +512,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveThree"
@@ -485,6 +522,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveFour"
@@ -494,6 +532,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveFive"
@@ -503,6 +542,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveSix"
@@ -512,6 +552,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveSeven"
@@ -521,6 +562,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveEight"
@@ -530,6 +572,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="fiveNine"
@@ -539,6 +582,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("fiveNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -550,6 +594,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixTwo"
@@ -559,6 +604,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixThree"
@@ -568,6 +614,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixFour"
@@ -577,6 +624,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixFive"
@@ -586,6 +634,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixSix"
@@ -595,6 +644,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixSeven"
@@ -604,6 +654,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixEight"
@@ -613,6 +664,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sixNine"
@@ -622,6 +674,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sixNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -633,6 +686,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenTwo"
@@ -642,6 +696,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenThree"
@@ -651,6 +706,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenFour"
@@ -660,6 +716,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenFive"
@@ -669,6 +726,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenSix"
@@ -678,6 +736,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenSeven"
@@ -687,6 +746,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenEight"
@@ -696,6 +756,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="sevenNine"
@@ -705,6 +766,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("sevenNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -716,6 +778,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightTwo"
@@ -725,6 +788,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightThree"
@@ -734,6 +798,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightFour"
@@ -743,6 +808,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightFive"
@@ -752,6 +818,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightSix"
@@ -761,6 +828,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightSeven"
@@ -770,6 +838,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightEight"
@@ -779,6 +848,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="eightNine"
@@ -788,6 +858,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("eightNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 				<Container>
@@ -799,6 +870,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineOne")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineTwo"
@@ -808,6 +880,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineTwo")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineThree"
@@ -817,6 +890,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineThree")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineFour"
@@ -826,6 +900,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineFour")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineFive"
@@ -835,6 +910,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineFive")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineSix"
@@ -844,6 +920,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineSix")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineSeven"
@@ -853,6 +930,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineSeven")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineEight"
@@ -862,6 +940,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineEight")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 					<Cell
 						id="nineNine"
@@ -871,6 +950,7 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 						disabled={isNonZero("nineNine")}
 						autoComplete="off"
 						type="number"
+						onInput={onInput}
 					></Cell>
 				</Container>
 			</MainGrid>
