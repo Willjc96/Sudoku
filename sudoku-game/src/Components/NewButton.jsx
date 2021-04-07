@@ -36,15 +36,15 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 			<Popover
 				position={Position.BOTTOM}
 				content={
-					<Menu width={20}>
-						<Menu.Group width={20}>
-							<Menu.Item width={20} onClick={newGameEasy}>
+					<Menu>
+						<Menu.Group>
+							<Menu.Item width={200} onClick={newGameEasy}>
 								Easy
 							</Menu.Item>
-							<Menu.Item width={20} onClick={newGameMedium}>
+							<Menu.Item width={200} onClick={newGameMedium}>
 								Medium
 							</Menu.Item>
-							<Menu.Item width={20} onClick={newGameHard}>
+							<Menu.Item width={200} onClick={newGameHard}>
 								Hard
 							</Menu.Item>
 						</Menu.Group>

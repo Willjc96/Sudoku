@@ -27,12 +27,12 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		margin: 1% auto 0;
 		@media (max-width: 1024px) {
 			width: 80%;
-			padding-bottom: 80%;
+			padding-bottom: 80.2%;
 			left: 10%;
 		}
 		@media (max-width: 430px) {
 			width: 90%;
-			padding-bottom: 92.5%;
+			padding-bottom: 93%;
 			left: 5%;
 			border: solid black 4px;
 			border-bottom: solid black 12px;
@@ -40,17 +40,22 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		}
 	`;
 	const Cell = styled.input`
-		border: 1.5px solid black;
+		border: 0.1px solid black;
 		position: relative;
 		width: 100%;
 		height: 0;
 		padding-top: 50%;
-		padding-bottom: 50%;
+		padding-bottom: 51%;
 		font-size: 1.8vw;
 		font-weight: bolder;
 		background-color: #d8d8d8;
+		opacity: 1;
 		@media (max-width: 1024px) {
 			font-size: 4.5vw;
+			padding-bottom: 52.1;
+		}
+		@media (max-width: 430px) {
+			padding-bottom: 52.5%;
 		}
 	`;
 	const Container = styled.div`
@@ -62,7 +67,10 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 		border: 3px solid black;
 		@media (max-width: 430px) {
-			padding-bottom: 103%;
+			border-bottom: 6px solid black;
+		}
+		@media (max-width: 1024px) {
+			padding-bottom: 99.7%;
 		}
 	`;
 
