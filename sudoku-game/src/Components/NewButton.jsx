@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button, SelectMenu, Popover, Position, Menu, CaretDownIcon } from "evergreen-ui";
+import { Button, Popover, Position, Menu, CaretDownIcon } from "evergreen-ui";
 
 export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 	const [menuState, setMenuState] = useState(false);
@@ -51,7 +51,7 @@ export default function Buttons({ newGameEasy, newGameMedium, newGameHard }) {
 					</Menu>
 				}
 			>
-				<Button marginTop={10} height={resizeBtn()} fontSize={resizeText()} appearance="primary" intent="none">
+				<Button marginTop={10} height={resizeBtn()} fontSize={resizeText()} appearance="primary" intent="none" iconAfter={CaretDownIcon}>
 					New
 				</Button>
 			</Popover>
