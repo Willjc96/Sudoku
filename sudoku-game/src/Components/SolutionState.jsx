@@ -442,7 +442,7 @@ const mediumAnswer = {
 	threeFour: 4,
 	threeFive: 9,
 	threeSix: 6,
-	threeSeven: 7,
+	threeSeven: 3,
 	threeEight: 7,
 	threeNine: 1,
 	fourOne: 4,

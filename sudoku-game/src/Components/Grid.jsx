@@ -32,10 +32,10 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 		}
 		@media (max-width: 430px) {
 			width: 90%;
-			padding-bottom: 93%;
+			padding-bottom: 94%;
 			left: 5%;
 			border: solid black 4px;
-			border-bottom: solid black 12px;
+			border-bottom: solid black 6px;
 			top: 250px;
 		}
 	`;
@@ -61,16 +61,11 @@ export default function Grid({ toggleSolutionState, newDifficulty }) {
 	const Container = styled.div`
 		position: relative;
 		width: 100%;
-		height: 0;
-		padding-bottom: 100%;
 		display: grid;
 		grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 		border: 3px solid black;
 		@media (max-width: 430px) {
 			border-bottom: 6px solid black;
-		}
-		@media (max-width: 1024px) {
-			padding-bottom: 99.7%;
 		}
 	`;
 
